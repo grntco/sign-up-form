@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    color: #fff;
+}
+
+.side-image {
+    width: 20%;
+    min-width: 448px;
+    height: 100vh;
+    background-color: darkblue;
+}
+
+.main {
+    background-color: black;
+    width: 100%;
+}
