@@ -7,6 +7,7 @@
 body {
     display: flex;
     color: #fff;
+    font-size: 16px;
 }
 
 .side-image {
@@ -19,4 +20,11 @@ body {
 .main {
     background-color: black;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    font-size: 1.5rem;
 }
