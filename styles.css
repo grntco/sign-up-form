@@ -3,9 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Regular font */
+@font-face {
+    font-family: "satoshi";
+    src: url('fonts/Satoshi-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Bold font */
+@font-face {
+    font-family: 'satoshi';
+    src: url('fonts/Satoshi-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-size: normal;
+}
 
 body {
     display: flex;
+    font-family: 'satoshi';
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
     color: #fff;
     font-size: 16px;
     background-color: #000;
@@ -13,16 +31,29 @@ body {
 
 .sidebar {
     width: 33%;
-    min-width: 400px;
+    min-width: 348px;
     height: 100vh;
     background-color: darkblue;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
-.side-image {
-    /* height: 100%; */
+.side-img {
+    height: 100%;
 }
+
+.img-overlay {
+    position: absolute;
+    top: 96px;
+    height: 160px;
+    width: auto;
+    background-color: rgba(41, 0, 57, 0.603);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .img-caption {
     position: absolute;
@@ -40,4 +71,5 @@ body {
 
 .hero-text {
     font-size: 1.5rem;
+    font-weight: bold;
 }
