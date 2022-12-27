@@ -168,32 +168,27 @@ input:focus {
 }
 
 .submit-btn {
+    border: none;
+    color: black;
+    background-image: linear-gradient(to right, rgba(241,119,156,1), rgba(248,178,159,1));
+    transition: 0.5s;
+    background-size: 200% auto;
     padding: .5rem 1.5rem;
     margin-top: 2rem;
-    background-image: linear-gradient(60deg, rgba(241,119,156,1), rgba(248,178,159,1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    border: rgba(241,119,156,1) 4px solid;
     border-radius: 1rem;
-    background-color: rgba(143,255,249,1);
     font-family: 'satoshi';
     font-weight: bold;
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     margin-left: 96px;
+
 }
 
 .submit-btn:hover {
-    background-image: linear-gradient(60deg, rgba(121,84,190,1), rgba(143,255,249,1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    border-color: rgba(143,255,249,1);
+    background-position: right center;
     cursor: pointer;
+
 }
 
 .login-text {
