@@ -66,7 +66,7 @@ p {
     top: 96px;
     height: 160px;
     width: 100%;
-    background-color: rgba(41, 0, 57, 0.603);
+    background-color: rgba(41, 0, 57, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,11 +88,26 @@ p {
     width: auto;
 }
 
-.img-caption {
+.caption-wrapper {
     position: absolute;
-    bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    height: 1.5rem;
+    width: 100%;
+    background-color: rgba(41, 0, 57, 0.6);
     font-size: .8rem;
-    color: #fff;
+    color: rgba(143,255,249,1);
+}
+
+.caption-wrapper a {
+    color: rgba(143,255,249,1);
+    text-decoration: none;
+}
+
+.caption-wrapper a:hover {
+    text-decoration: underline;
 }
 
 .main {
@@ -182,7 +197,6 @@ input:focus {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     margin-left: 96px;
-
 }
 
 .submit-btn:hover {
