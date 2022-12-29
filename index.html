@@ -68,7 +68,10 @@
                 pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,20}$"
                 required
               />
-              <p class="error-msg"><span>*</span>Passwords do not match</p>
+              <p class="error-msg" id="length-error">Include 8-20 characters</p>
+              <p class="error-msg" id="letter-error">Include at least one letter</p>
+              <p class="error-msg" id="number-error">Include at least one number</p>
+              <p class="error-msg" id="special-char-error">Include at least one special character</p>
             </li>
             <li class="input-item">
               <label for="password-confirm">Confirm Password</label>
@@ -80,10 +83,11 @@
                 pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,20}$"
                 required
               />
+              <p class="error-msg" id="no-match-error"></p>
             </li>
           </ul>
         </fieldset>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
       </form>
       <p class="login-text">
         Already have an account? <a href="#" class="login-link">Log in</a>
