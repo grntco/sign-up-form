@@ -204,6 +204,7 @@ input:focus {
     font-size: 0.6rem;
     font-weight: 500;
     color: rgb(255, 129, 129);
+    line-height: 1rem;
 }
 
 .error-msg span {
