@@ -37,15 +37,15 @@
           <ul class="input-fields">
             <li class="input-item">
               <label for="f-name">First Name</label>
-              <input type="text" name="f-name" id="f-name" />
+              <input type="text" name="f-name" id="f-name" required />
             </li>
             <li class="input-item">
               <label for="l-name">Last Name</label>
-              <input type="mail" name="l-name" id="l-name" />
+              <input type="mail" name="l-name" id="l-name" required />
             </li>
             <li class="input-item">
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
+              <input type="email" name="email" id="email" required />
             </li>
             <li class="input-item">
               <label for="phone">Phone Number</label>
@@ -53,14 +53,17 @@
             </li>
             <li class="input-item">
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
+              <input class="error" type="password" name="password" id="password" required />
+              <p class="error-msg"><span>*</span>Passwords do not match</p>
             </li>
             <li class="input-item">
               <label for="password-confirm">Confirm Password</label>
               <input
+                class="error"
                 type="password"
                 name="password-confirm"
                 id="password-confirm"
+                required
               />
             </li>
           </ul>

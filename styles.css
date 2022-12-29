@@ -1,225 +1,260 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* Regular font */
 @font-face {
-    font-family: "satoshi";
-    src: url('fonts/Satoshi-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "satoshi";
+  src: url("fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Bold font */
 @font-face {
-    font-family: 'satoshi';
-    src: url('fonts/Satoshi-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-size: normal;
+  font-family: "satoshi";
+  src: url("fonts/Satoshi-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-size: normal;
 }
 
 /* Black font */
 @font-face {
-    font-family: 'satoshi';
-    src: url('fonts/Satoshi-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-size: normal;
+  font-family: "satoshi";
+  src: url("fonts/Satoshi-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-size: normal;
 }
 
 body {
-    display: flex;
-    font-family: 'satoshi', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 16px;
-    background-color: rgba(22,17,24,255);
+  display: flex;
+  font-family: "satoshi", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 16px;
+  background-color: rgba(22, 17, 24, 255);
 }
 
-.main p, label {
-    background-image: linear-gradient(60deg, rgba(121,84,190,1), rgba(143,255,249,1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+.hero-text p,
+label, .login-text {
+  background-image: linear-gradient(
+    60deg,
+    rgba(121, 84, 190, 1),
+    rgba(143, 255, 249, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 p {
-    line-height: 2rem;
+  line-height: 2rem;
 }
 
 .sidebar {
-    width: 33vw;
-    min-width: 348px;
-    height: 100vh;
-    background-color: darkblue;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    background-image: url('images/lexica-cyberpunk-boy-5.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 33vw;
+  min-width: 348px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-image: url("images/lexica-cyberpunk-boy-5.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo-container {
-    position: absolute;
-    top: 96px;
-    height: 160px;
-    width: 100%;
-    background-color: rgba(41, 0, 57, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.6rem;
+  position: absolute;
+  top: 96px;
+  height: 160px;
+  width: 100%;
+  background-color: rgba(41, 0, 57, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .logo {
-    font-weight: 900;
-    font-size: 3rem;
-    background-image: linear-gradient(60deg, rgba(241,119,156,1), rgba(248,178,159,1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 3rem;
+  background-image: linear-gradient(
+    60deg,
+    rgba(241, 119, 156, 1),
+    rgba(248, 178, 159, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .spaceship-icon {
-    height: 3.5rem;
-    width: auto;
+  height: 3.5rem;
+  width: auto;
 }
 
 .caption-wrapper {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    height: 1.5rem;
-    width: 100%;
-    background-color: rgba(41, 0, 57, 0.6);
-    font-size: .8rem;
-    color: rgba(143,255,249,1);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 1.5rem;
+  width: 100%;
+  background-color: rgba(41, 0, 57, 0.6);
+  font-size: 0.8rem;
+  color: rgba(143, 255, 249, 1);
 }
 
 .caption-wrapper a {
-    color: rgba(143,255,249,1);
-    text-decoration: none;
+  color: rgba(143, 255, 249, 1);
+  text-decoration: none;
 }
 
 .caption-wrapper a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .main {
-    background-color: rgba(24,17,24,1);
-    width: 77vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: bold;
+  background-color: rgba(24, 17, 24, 1);
+  width: 77vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .hero-text {
-    margin: 0px 96px;
+  margin: 0px 96px;
 }
 
 .hero-text p {
-    font-size: 1.2rem;
-    margin-top: 2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 }
 
 form {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 h3 {
-    font-size: 1.5rem;
-    background-image: linear-gradient(60deg, rgba(241,119,156,1), rgba(248,178,159,1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+  font-size: 1.5rem;
+  background-image: linear-gradient(
+    60deg,
+    rgba(241, 119, 156, 1),
+    rgba(248, 178, 159, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .input-container {
-    border: none;
-    padding: 24px 96px;
-    background-color: rgba(51, 39, 44, .6);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+  border: none;
+  padding: 24px 96px;
+  background-color: rgba(51, 39, 44, 0.6);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .input-fields {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
 }
 
 .input-item {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    margin-top: 1rem;
-    font-size: .8rem;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
 }
 
 input {
-    margin-top: .1rem;
-    background-color: #fff;
-    padding: .5rem;
-    border: none;
-    border-radius: .5rem;
-    font-family: 'satoshi';
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
+  margin-top: 0.1rem;
+  background-color: rgba(162, 162, 162, 0.3);
+  padding: 0.5rem;
+  border: 1px solid rgba(121, 84, 190, 1);
+  border-radius: 0.5rem;
+  font-family: "satoshi";
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  outline: none;
 }
 
 input:focus {
-    background-color: #fff;
-    border: none;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, .5);
+    border-color: rgba(143, 255, 249, 1);
+    box-shadow: 0px 2px 10px rgba(143, 255, 249, 1);
+}
+
+.error {
+    border-color: rgb(255, 129, 129);
+}
+
+.error-msg {
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: rgb(255, 129, 129);
+}
+
+.error-msg span {
+    font-size: 0.8rem;
 }
 
 .submit-btn {
-    border: none;
-    color: black;
-    background-image: linear-gradient(to right, rgba(241,119,156,1), rgba(248,178,159,1));
-    transition: 0.5s;
-    background-size: 200% auto;
-    padding: .5rem 1.5rem;
-    margin-top: 2rem;
-    border-radius: 1rem;
-    font-family: 'satoshi';
-    font-weight: bold;
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    margin-left: 96px;
+  border: none;
+  color: black;
+  background-image: linear-gradient(
+    to right,
+    rgba(241, 119, 156, 1),
+    rgba(248, 178, 159, 1)
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  padding: 0.5rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-family: "satoshi";
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-left: 96px;
 }
 
 .submit-btn:hover {
-    background-position: right center;
-    cursor: pointer;
-    box-shadow: 0px 2px 10px rgba(248,178,159,1);
+  background-position: right center;
+  cursor: pointer;
+  box-shadow: 0px 2px 10px rgba(248, 178, 159, 1);
 }
 
 .login-text {
-    margin-top: 2rem;
-    margin-left: 96px;
+  margin-top: 2rem;
+  margin-left: 96px;
 }
 
 .login-text a {
-    background-image: linear-gradient(60deg, rgba(241,119,156,1), rgba(248,178,159,1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    text-decoration: none;
+  background-image: linear-gradient(
+    60deg,
+    rgba(241, 119, 156, 1),
+    rgba(248, 178, 159, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  text-decoration: none;
 }
 
 .login-text a:hover {
-    border-bottom: 2px solid rgba(241,119,156,1);
+  border-bottom: 2px solid rgba(241, 119, 156, 1);
 }
