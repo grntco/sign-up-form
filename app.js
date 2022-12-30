@@ -15,30 +15,18 @@ const noMatchError = document.getElementById('no-match-error');
 
 const submitBtn = document.getElementById('submit-btn');
 
-// submitBtn.addEventListener('click', function() {
-
-//     matchPassword()
 
 
-// });
 
-// function matchPassword(str1, str2) {
-//     const noMatchError = document.getElementById('no-match-error');
-//     if (str2.hasFocus()) {
-//         if (str1 === str2) {
-//             console.log(true);
-//             return true;
-//         }
-//     } else {
-//         console.log(false);
-//         return false;
-// }
-// }
+pwdConfirm.addEventListener('keyup', confirmPwd);
+pwd.addEventListener('keyup', confirmPwd);
 
-pwdConfirm.addEventListener('keyup', function() {
+function confirmPwd() {
     if (pwd.value !== pwdConfirm.value) {
-        noMatchError.innerHTML = 'Passwords do not match.';
+        noMatchError.innerHTML = '<span>*</span>Passwords do not match.';
+        pwdConfirm.classList.add('error');
     } else {
         noMatchError.innerHTML = '';
+        pwdConfirm.classList.remove('error');
     }
-})
+};
