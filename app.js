@@ -1,24 +1,44 @@
-// // Error messages
-// const lengthError = document.getElementById('length-error');
-// const letterError = document.getElementById('letter-error');
-// const numberError = document.getElementById('number-error');
-// const specialCharError = document.getElementById('special-char-error');
+// Error messages
+const lengthError = document.getElementById('length-error');
+const letterError = document.getElementById('letter-error');
+const numberError = document.getElementById('number-error');
+const specialCharError = document.getElementById('special-char-error');
 
-// // const fname = document.getElementById('f-name').value;
+// const fname = document.getElementById('f-name').value;
+
+const pwd = document.getElementById('password');
+const pwdConfirm = document.getElementById('password-confirm');
+const email = document.getElementById('email');
+
+const noMatchError = document.getElementById('no-match-error');
 
 
-// const submitBtn = document.getElementById('submit-btn');
+const submitBtn = document.getElementById('submit-btn');
 
 // submitBtn.addEventListener('click', function() {
-//     const pwd = document.getElementById('password');
-//     const pwdConfirm = document.getElementById('password-confrm');
-//     const email = document.getElementById('email');
-//     matchPassword(pwd.value, pwdConfirm.value);
+
+//     matchPassword()
+
+
 // });
 
 // function matchPassword(str1, str2) {
 //     const noMatchError = document.getElementById('no-match-error');
-//     if (str1 !== str2) {
-//         noMatchError.value = '<span>*</span>Passwords do not match';
-//     }
+//     if (str2.hasFocus()) {
+//         if (str1 === str2) {
+//             console.log(true);
+//             return true;
+//         }
+//     } else {
+//         console.log(false);
+//         return false;
 // }
+// }
+
+pwdConfirm.addEventListener('keyup', function() {
+    if (pwd.value !== pwdConfirm.value) {
+        noMatchError.innerHTML = 'Passwords do not match.';
+    } else {
+        noMatchError.innerHTML = '';
+    }
+})
