@@ -36,26 +36,34 @@ function checkPwd() {
     
     if (pwdValue.length < 8 || pwdValue.length > 20) {
         lengthError.innerHTML = '<span>*</span>Include 8-20 characters';
+        pwdConfirm.classList.add('error');
     } else {
         lengthError.innerHTML = '';
+        pwdConfirm.classList.remove('error');
     }
 
     if (!letterRegex.test(pwdValue)) {
         letterError.innerHTML = '<span>*</span>Include at least one letter';
+        pwdConfirm.classList.add('error');
     } else {
         letterError.innerHTML = '';
+        pwdConfirm.classList.remove('error');
     }
 
     if (!numberRegex.test(pwdValue)) {
         numberError.innerHTML = '<span>*</span>Include at least one number';
+        pwdConfirm.classList.add('error');
     } else {
         numberError.innerHTML = '';
+        pwdConfirm.classList.remove('error');
     }
 
     if (!specialCharRegex.test(pwdValue)) {
         specialCharError.innerHTML = '<span>*</span>Include at least one special character (@$!%*#?&)';
+        pwdConfirm.classList.add('error');
     } else {
         specialCharError.innerHTML = '';
+        pwdConfirm.classList.remove('error');
     }
 }
 

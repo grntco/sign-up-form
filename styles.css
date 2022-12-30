@@ -201,6 +201,8 @@ input:focus:invalid {
   box-shadow: 0px 2px 10px rgb(255, 129, 129);
 }
 
+
+
 .error {
     border-color: rgb(255, 129, 129);
 }
