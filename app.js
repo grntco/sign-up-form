@@ -1,9 +1,3 @@
-
-
-
-const submitBtn = document.getElementById('submit-btn');
-const email = document.getElementById('email');
-
 // Confirm passwords
 const pwd = document.getElementById('password');
 const pwdConfirm = document.getElementById('password-confirm');
